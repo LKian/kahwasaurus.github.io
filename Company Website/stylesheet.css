@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, arial;
+	box-sizing: border-box; }
+body {
+	
+	background-color: #2c343b;
+	font-size: 1em;
+	color: #fff;
+	overflow-x: hidden; }
+
+p { 
+	text-align: justify;
+	font-family: sans-serif, arial;
+	line-height: 1.4em;
+	margin-top: 25px; }
+h1,h2,h3 {
+	font-family: 'verdana'; }
+#container {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px dotted red; }
+
+header { 
+	text-align: center; }
+header img { 
+	width: 45px; }
+nav {
+	width: 100%;
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	border: 2px dotted green;
+	background-color: #fff; }
+nav ul {
+    padding: 0px;
+    display:inline-block;
+    margin: 0px; }
+nav li {
+	display: block;
+	padding: 10px 0; }
+nav a {
+	color: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-transform: uppercase; }
+
+a:visited {
+	color: #000; }
+
+nav a:hover {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000; }
+
+#tagline {
+	text-align: center;
+	margin: 50px 0 0px; }
+#mainContainer {
+	width: 100%;
+	margin-top: 25px; }
+#mainContainer h2, #mainContainer h3 {
+	text-transform: uppercase;
+	margin-bottom: 15px; }
+#mainContainer h3 {
+	color: #fff; }
+
+.rowoftwo {  
+	width: 100%;
+	padding: 50px 20px;
+	margin: 0;
+	color: #000; }
+.twocolumn {
+	background-color: #ccc; }
+ 
+.rowofthree {  
+	width: 100%;
+	padding: 50px 20px;
+	margin: 0;
+	color: #000; }
+.threecolumn {
+	background-color: #ccc; }
+
+.rowoffour { 
+	float: left;  
+	max-width: 100%;
+	padding: 40px 20px;
+	margin: 0; }
+
+.rowoffour img {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid white; }
+.rowoffour p {
+    margin-top: 25px; }
+
+.projectrowL, .projectrowR { 
+	max-width: 100%;
+	padding: 40px 20px; }
+
+.projectcolumn { 
+	width: 100%;
+	padding: 50px 20px;
+	margin: 0;
+	background-color: white;
+	color: #000;  }
+.projectcolumn a {
+	text-decoration: none;
+	color: #E65B53;
+	font-weight: 700;
+	float: right;
+	display: block; }
+
+.projectcolumn a:hover {
+	text-decoration: underline; }
+
+/* full view */ 
+@media screen and (min-width:1120px) {
+	header {
+  		position: relative;
+		text-align: center;
+		padding: 0px 0; }
+	header img {
+		position: absolute;
+		top: -6px;
+		left: 20px; }
+	#mainContainer {
+		width: 100%; }
+	.twocolumn {
+		width: 100%;
+   		clear: both;
+   		float: left; }
+  	.twocolumn:before, .twocolumn:after {
+    	content: " ";
+    	display: table; }
+  	.twocolumn:after {
+    	clear: both; }
+	.rowoftwo { 
+   		width: 46%;
+   		float: left;
+    	padding: 50px 15px;
+    	margin: 2%; }
+	.threecolumn {
+		width: 100%;
+   		clear: both;
+   		float: left; }
+  	.threecolumn:before, .threecolumn:after {
+    	content: " ";
+    	display: table; }
+  	.threecolumn:after {
+    	clear: both; }
+	.rowofthree { 
+   		width: 28%;
+   		float: left;
+    	padding: 50px 15px;
+    	margin: 2%; }
+    .fourcolumn {
+		width: 100%;
+		clear: both; }
+	.fourcolumn:before, .fourcolumn:after {
+    	content: " ";
+    	display: table; }
+  	.fourcolumn:after {
+    	clear: both; }
+    .rowoffour {
+    	width: 21%;
+    	padding: 15px 15px;
+    	margin: 2%; }
+
+    .projectcolumn {
+		width: 100%;
+   		clear: both;
+   		float: left; }
+  	.projectcolumn:before, .projectcolumn:after {
+    	content: " ";
+    	display: table; }
+  	.projectcolumn:after {
+    	clear: both; }
+	.projectrowL { 
+   		width: 55%;
+   		float: left;
+    	padding: 50px 45px; } 
+    .projectrowR { 
+   		width: 35%;
+   		float: left;
+    	padding: 50px 45px; }
+ 
+
+  	nav ul li {
+		display: inline-block;
+		margin: 15px;
+		padding: 0; }
+	nav {
+		padding: 0;	}
+}		
+
+#tagline {
+	margin-bottom: 50px; }
+#tagline h1 {
+	text-transform: uppercase;
+	font-size: 2.2em;
+	font-weight: 800;  }
+#tagline h2 {
+	font-size: 1.6em;
+	color: #ccc;
+	font-weight: 300;
+	margin-bottom: 30px; }
+a.button {
+	display: block;
+	margin: 0 auto;
+	height: 60px;
+	width: 185px;
+	line-height: 60px;
+	color: #fff;
+	text-decoration: none;
+	background: #c00;
+	background: -webkit-linear-gradient(#f85032 50%, #c00 100%);
+	background: -o-linear-gradient(#f85032 50%, #c00 100%);
+	background: linear-gradient(#f85032 50%, #c00 100%); }
+
+a.button:hover,a.button:focus  { 
+	font-weight: bold; }
+a.button:active  {
+	position: relative;
+	bottom: 1px; }	
+
+footer {
+	box-sizing: border-box;
+	clear: both;
+	text-align: center;
+	padding: 0 25px;
+	color: #ccc;
+	font-size: 0.8em; 
+	border: 2px dotted white; }
